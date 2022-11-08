@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        font-family: "Open Sans", sans-serif;
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Open+Sans:wght@300&display=swap");
+      #t {
+        font-size: 33px;
+      }
+
+      h1 {
+        background-color: #fcf6f5ff;
+        width: 20vw;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 14px;
+      }
+
+      h1:hover {
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: 0.8s;
+        box-shadow: 15px 12px 5px 2px rgb(148, 140, 140);
+      }
+
+      #t {
+        background-color: white;
+        width: 20vw;
+        text-align: center;
+        border: 1px solid #2bae66ff;
+        border-radius: 14px;
+      }
+
+      #t:hover {
+        color: #2bae66ff;
+        background-color: #fcf6f5ff;
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: 0.8s;
+        box-shadow: 15px 12px 5px 3px;
+        border: 1px solid #2bae66ff;
+      }
+
+      #w {
+        background-color: #f4df4eff;
+        width: 20vw;
+        text-align: center;
+        border: 1px solid #f4df4eff;
+        border-radius: 14px;
+        font-size: 33px;
+      }
+      #w:hover {
+        color: #f4df4eff;
+        background-color: #949398ff;
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: 0.8s;
+        box-shadow: 15px 12px 5px 3px;
+      }
+
+      .main-container {
+        display: flex;
+        flex-direction: row;
+      }
+      .main-container2 {
+        display: flex;
+        flex-direction: row;
+      }
+      .main-container3 {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .container2:hover {
+        color: #2bae66ff;
+        background-color: #fcf6f5ff;
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: 0.8s;
+        box-shadow: 15px 12px 5px 3px;
+      }
+
+      .container2 {
+        box-sizing: border-box;
+        border: 1px solid #2bae66ff;
+        background-color: #fcf6f5ff;
+        width: 330px;
+        margin: 20px;
+        font-size: 23px;
+        border-radius: 15px;
+        color: #2bae66ff;
+      }
+
+      .container {
+        box-sizing: border-box;
+        border: 1px solid black;
+        width: 330px;
+        margin: 10px;
+        font-size: 23px;
+        border-radius: 15px;
+      }
+
+      .container:hover {
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: 0.8s;
+        box-shadow: 10px 23px 23px rgb(49, 48, 54);
+      }
+
+      .seperate-container {
+        box-sizing: border-box;
+        border: 1px solid;
+        padding: 4px;
+        width: 500px;
+        margin: 100px;
+        font-size: 23px;
+      }
+
+      .seperate-container p {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .container3 {
+        box-sizing: border-box;
+        border: 1px solid #949398ff;
+        width: 230px;
+        margin: 30px;
+        font-size: 23px;
+        background-color: #f4df4eff;
+        color: black;
+        border-radius: 15px;
+      }
+
+      .container3:hover {
+        color: #f4df4eff;
+        background-color: #949398ff;
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: 0.5s;
+        box-shadow: 13px 23px 23px #f4df4eff;
+      }
+      #a {
+        text-align: center;
+        font-weight: bold;
+      }
+      #b {
+        text-align: center;
+        font-weight: bold;
+      }
+      #b {
+        text-align: center;
+        font-weight: bold;
+      }
+      #c {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      #c:hover {
+        color: black;
+      }
+      #d {
+        text-align: center;
+        font-weight: bold;
+      }
+      #e {
+        text-align: center;
+        font-weight: bold;
+      }
+      #g {
+        text-align: center;
+        font-weight: bold;
+      }
+      #f {
+        text-align: center;
+        font-weight: bold;
+      }
+      #g {
+        font-weight: bold;
+        text-align: center;
+      }
+      #h {
+        font-weight: bold;
+        text-align: center;
+      }
+      #j {
+        font-weight: bold;
+        text-align: center;
+      }
+      #k {
+        font-weight: bold;
+        text-align: center;
+      }
+      #l {
+        font-weight: bold;
+        text-align: center;
+      }
+      #sc {
+        margin-left: 20px;
+        font-size: 33px;
+      }
+    </style>
+    <title>LISTS</title>
+  </head>
+  <body>
+    <h1>DIFFERENT LISTS</h1>
+    <!-- Order Lists -->
+    <div class="main-container">
+      <div class="container">
+        <p id="g">Order Lists</p>
+        <ol>
+          <li>Rome</li>
+          <li>Japan</li>
+          <li>France</li>
+          <li>United Kingdom</li>
+          <li>Philippines</li>
+        </ol>
+        <!-- Unordered Lists-->
+        <ul>
+          <p>Unordered Lists</p>
+          <li>Rome</li>
+          <li>Japan</li>
+          <li>France</li>
+          <li>Britain</li>
+          <li>Philippines</li>
+        </ul>
+      </div>
+
+      <!-- Description Lists -->
+      <div class="container">
+        <dl>
+          <p id="a">Description Lists</p>
+          <dt>Adobo</dt>
+          <dd>-One of my favorite dish.</dd>
+          <dt>Sagittarius</dt>
+          <dd>-My zodiac sign.</dd>
+          <dt>France</dt>
+          <dd>-Dream destination.</dd>
+          <dt>BSIT</dt>
+          <dd>
+            -A bachelor's degree awarded for an undergraduate program in the
+            information technology.
+          </dd>
+        </dl>
+      </div>
+
+      <!-- Nested Lists -->
+      <div class="container">
+        <p id="b">Nested Lists</p>
+        <ol>
+          <li>
+            Philippines
+            <ul>
+              <li>Manila</li>
+            </ul>
+          </li>
+          <li>
+            Italy
+            <ul>
+              <li>Rome</li>
+            </ul>
+          </li>
+          <li>
+            Japan
+            <ul>
+              <li>Tokyo</li>
+            </ul>
+          </li>
+          <li>
+            United Kingdom
+            <ul>
+              <li>London</li>
+            </ul>
+          </li>
+          <li>
+            Germany
+            <ul>
+              <li>Berlin</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <!-- Start Attribute -->
+      <div class="seperate-container">
+        <h2 id="sc">Start Attribute</h2>
+        <p>
+          ol type="i" start="5"> It will show Roman lower case value starting
+          with "v".
+        </p>
+        <ol type="i" start="5">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+        </ol>
+      </div>
+    </div>
+
+    <h3 id="t">5 TYPES OF ATTRIBUTES</h3>
+    <div class="main-container2">
+      <div class="container2">
+        <!-- Numeric type -->
+        <p id="c">Numeric Number</p>
+        <ol>
+          <li>C</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ol>
+      </div>
+      <!-- Roman Upper case -->
+      <div class="container2">
+        <p id="d">Capital Roman Number</p>
+        <ol type="I">
+          <li>C</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ol>
+      </div>
+      <!-- Roman lower case -->
+      <div class="container2">
+        <p id="e">Small Roman Number</p>
+        <ol type="i">
+          <li>C</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ol>
+      </div>
+      <!-- Capital Alphabet -->
+      <div class="container2">
+        <p id="f">Capital Alphabet</p>
+        <ol type="A">
+          <li>C</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ol>
+      </div>
+      <!-- Small Alphabet -->
+      <div class="container2">
+        <p id="g">Small Alphabet</p>
+        <ol type="a">
+          <li>C</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ol>
+      </div>
+    </div>
+    <!-- 4 types of attributes (ul) tag -->
+    <h4 id="w">TYPES OF ATTRIBUTES (ul) tag</h4>
+    <div class="main-container3">
+      <div class="container3">
+        <!-- Disc -->
+        <p id="h">Disc</p>
+        <ul type="disc">
+          <li>C</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <div class="container3">
+        <!-- Circle -->
+        <p id="j">Circle</p>
+        <ul type="circle">
+          <li>C</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <div class="container3">
+        <!-- Square -->
+        <p id="k">Square</p>
+        <ul type="circle">
+          <li>C</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <div class="container3">
+        <!-- None -->
+        <p id="l">None</p>
+        <ul type="none">
+          <li>C</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+  <div style="margin-top: 300px"></div>
+</html>
